@@ -1,0 +1,13 @@
+{
+    "nombre":"jesus",
+    "apellido":"prieto",
+    "edad":"33",
+    "pasatiempos":["ejercicios","programar"],
+    "soltero":false,
+    "contacto":{
+        "email":"jesusdavidprieto@gmail.com",
+        "tw": "jesprieto",
+        "celular":3022607598
+            }
+}
+

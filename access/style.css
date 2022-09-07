@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Space+Mono&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f7f7f7;
+}
+
+.navigation{
+    width: 80px;
+    min-height: 200px;
+    background: #fff;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: -5px 20px 50px rgba(10, 120, 209, 0.623);
+    transition: 0.5s;
+}
+.navigation .menu_toggle {
+    position: relative;
+    width: 80px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding:0 20px;
+    width:100%;
+}
+
+/*.navigation .menu_toggle::before {
+    content:'';
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    background: rgb(206, 20, 20);
+
+}*/
+
+h1 {
+    font-size: small;
+    color: grey;
+}
+.navigation .menu_toggle  p{
+
+    font-size: 7px;
+}
