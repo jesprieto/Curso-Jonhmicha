@@ -169,7 +169,55 @@ const   $figure = document.createElement("figure"),
         $figure2.classList.add("card");
         $cards.appendChild($figure2);
 
-        const estaciones = ["primavera","verano","otoño","invierno"]
+        const estaciones = ["primavera","verano","otoño","invierno","otra Estacion"]
             $ul = document.createElement("ul");
+        
+            /* Se insertan las ul en el DOM */
             document.write("<h3> Estaciones del Año </h3>");
+            document.body.appendChild($ul)
 
+             /* Se insertan las ul en el DOM */
+            estaciones.forEach(el =>{
+                const $li = document.createElement("li");
+                $li.textContent = el;
+                $ul.appendChild($li)
+            })
+        /* Se insertan las ul en el DOM para Agregar los continentes */
+        const continentes  =["America","Africa","Asia","Europa","Oceania"],
+        $ul2 = document.createElement("ul");
+
+        /* Se agrega el titulo Continentes del mundo */
+        document.write("<h3>Continentes del mundo</h3>");
+
+         /* Se agrega ul al Html */
+        document.body.appendChild($ul2);
+
+        /* Se agrega innetHtml de manera vacia */
+        $ul2.innerHTML="";
+        
+        /* Incersion  al Dom (ul) , por cada ciclo se agrega un elemento (li) */
+        continentes.forEach(el =>($ul2.innerHTML+=`<li>${el}</li>`));
+
+        /* FRAGMENTOS*/
+        
+
+        const meses =[
+            "Enero",
+            "Febrero",
+            "Marzo",
+            "Abril",
+            "Mayo",
+            "Junio",
+        ]
+        $ul3 = document.createElement("ul")
+        const $fragment = document.createDocumentFragment();
+
+        meses.forEach(el =>{
+            const $li =document.createElement("li");
+            $li.textContent = el;
+            $fragment.appendChild($li);
+        });
+
+        document.write("<h3> Meses del Año</h3>");
+        $ul3.appendChild($fragment);
+        document.body.appendChild($ul3);
